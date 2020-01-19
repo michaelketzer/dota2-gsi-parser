@@ -46,7 +46,7 @@ build:
     - yarn run build
 
 deploy_prod:
-  stage: deploy_production
+  stage: deploy_prod
   needs:
     - job: build
       artifacts: true
