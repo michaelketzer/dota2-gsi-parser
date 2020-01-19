@@ -54,7 +54,7 @@ deploy_prod:
   before_script:
     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
     - eval $(ssh-agent -s)
-    - echo "$SSH_KEY" | tr -d '\r' | ssh-add -
+    - echo "$PROD_SSH_KEY" | tr -d '\r' | ssh-add -
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - ssh-keyscan $PROD_HOST >> ~/.ssh/known_hosts
