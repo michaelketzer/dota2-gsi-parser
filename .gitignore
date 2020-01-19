@@ -1,0 +1,5 @@
+node_modules/
+lib/
+.env
+coverage/
+app.log
