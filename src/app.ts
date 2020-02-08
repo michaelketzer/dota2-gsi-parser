@@ -3,7 +3,7 @@ import * as Sentry from '@sentry/node';
 import d2gsi, { Client} from 'dota2-gsi';
 //@ts-ignore
 import Logger from 'simple-node-logger';
-import Transport from './Transport';
+import Transport from 'backend-transport';
 
 const log = Logger.createSimpleLogger('app.log');
 
@@ -16,7 +16,7 @@ if(SENTRY_DSN) {
 }
 
 const server = new d2gsi({port: +PORT});
-export const ts = new Transport(WS_URI);
+export const ts = new Transport({url: WS_URI});
 
 export function queueWSMessage(msg: string, timeout = 10000): void {
     setTimeout(() => ts.send(msg), timeout);
