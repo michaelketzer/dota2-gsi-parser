@@ -28,7 +28,7 @@
     "dota2-gsi": "^1.0.2",
     "dotenv": "^8.2.0",
     "simple-node-logger": "^18.12.23",
-    "typescript": "^3.7.2"
+    "typescript": "^4.0.5"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
