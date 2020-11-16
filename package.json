@@ -23,7 +23,7 @@
   "author": "GriefCode",
   "license": "ISC",
   "dependencies": {
-    "@sentry/node": "^5.9.0",
+    "@sentry/node": "^5.27.4",
     "backend-transport": "^1.0.4",
     "dota2-gsi": "^1.0.2",
     "dotenv": "^8.2.0",
