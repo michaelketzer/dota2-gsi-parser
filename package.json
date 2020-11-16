@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
-    "@types/jest": "^24.0.23",
+    "@types/jest": "^26.0.15",
     "@types/ws": "^6.0.3",
     "jest": "^24.9.0",
     "ts-jest": "^24.2.0"
